@@ -1,0 +1,410 @@
+/********************************TAG SELECTORS*********************************/
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 1.2rem;
+  color: #40514E;
+  line-height: 2;
+}
+
+h1 {
+  font-size: 5.525rem;
+  margin-top: 50;
+  margin-bottom: 0;
+  font-family: 'Lobster', cursive;
+  color: #00bbf0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  margin-bottom: 0;
+  color: #00bbf0;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #005792;
+}
+
+hr{
+  color:#A9A9A9;
+  border:0;
+  border-bottom: 10px dotted;
+  width: 50%;
+  margin: 2% auto;
+}
+
+a {
+  color: #40514E;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #00bbf0;
+}
+
+ul {
+  list-style: none;
+  margin: auto;
+  padding-left: 0;
+  width: 50%;
+}
+
+li {
+  padding: 5px;
+}
+
+table {
+  font-size: 1.2rem;
+}
+
+/************************Top Nav Bar*******************************/
+.nav {
+  background-color: #00bbf0;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+
+#nav-link:hover {
+  color: white;
+}
+
+/************************Top Section*******************************/
+
+.top-container {
+  background-color: #d9faff;
+  position: relative;
+  padding: 50px 0 0 0;
+}
+
+/***top background image-mountains***/
+.img-mt {
+  padding: 50px 0 0 0;
+  bottom: 0;
+  width: 100%;
+  max-height: 450px;
+}
+
+/**hot air ballon gif**/
+.hot-air-ballon {
+position: absolute;
+}
+
+/**Start Cloud Animation**/
+@keyframes drifting-left {
+  from {left: 0;}
+
+  to {left: 8%;}
+}
+
+.left-cloud {
+  position: absolute;
+  left: 5%;
+  width: 40%;
+  animation-name: drifting-left;
+  animation-duration: 30s;
+  /* animation-delay: 2s; */
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes drifting-right {
+  from {left: 60%;}
+
+  to {left: 65%;}
+}
+
+.right-cloud {
+  position: absolute;
+  width: 30%;
+  left: 60%;
+  bottom: 30%;
+  animation-name: drifting-right;
+  animation-duration: 30s;
+  /* animation-delay: 2s; */
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+/***End cloud animation****/
+
+/***Start skydiver animation**/
+@keyframes skydiver-1 {
+  0% {
+    top: 50%;
+    left: 100%;
+  }
+
+  20% {
+    top: 55%
+  }
+
+  40% {
+    top: 60%;
+    width: 3%;
+  }
+
+  80% {
+    top: 55%
+  }
+
+  100% {
+    top: 50%;
+    left: -1%;
+  }
+}
+
+.skydive-1 {
+  position: absolute;
+  left: -200px;
+  width: 8%;
+  animation-name: skydiver-1;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+
+@keyframes skydiver-2 {
+  0% {
+    top: 70%;
+    right: 100%;
+    opacity: 1;
+  }
+
+  20% {
+    top: 73%
+  }
+
+  40% {
+    top: 76%;
+    width: 3%;
+  }
+
+  70% {
+    top: 78%
+  }
+
+95%{
+  opacity: 1;
+}
+  100% {
+    top: 68%;
+    right: 0;
+    opacity: 0;
+  }
+}
+
+  .skydive-2 {
+    position: absolute;
+    transform: scaleX(-1);
+    bottom: 200px;
+    width: 4%;
+    animation-name: skydiver-2;
+    animation-duration: 5s;
+    animation-delay: 10s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    opacity: 0;
+  }
+/***End Skydive animation***/
+
+/************************About me intro Section*******************************/
+
+.about-me-container {
+  padding: 2%;
+  background-color: #e6ebef;
+}
+
+.profile-img {
+  width: 12.5%
+}
+
+.intro{
+  width: 40%;
+  margin: auto;
+
+}
+/************************Work Examples Section*******************************/
+
+.work-container {
+  padding: 2%;
+}
+
+/**computer gif**/
+.computer-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+/**Work skills**/
+.skill-row {
+  text-align: left;
+  line-height: 2;
+  width: 50%;
+  margin: 30px auto 30px auto;
+}
+
+.portfolio-link {
+  text-align: right;
+}
+
+/************************Skills/Abilities Section*******************************/
+.abilities {
+  padding: 2% 4rem;
+}
+
+/*****Start Skills*****/
+/* abilities */
+
+.abilities {
+  background-color: #e6ebef;
+}
+.abilitis-div {
+  text-align: center;
+}
+.abiliti-h2 {
+  margin-top: 40px;
+}
+.abiliti-hr {
+  margin-top: 30px;
+}
+.abiliti-h3 {
+  text-align: left;
+}
+.table{
+  margin: auto;
+  max-width: 600px;
+}
+
+.abiliti-table {
+  width: 100%;
+}
+.abiliti-p {
+  margin: 2%;
+}
+.th-align01 {
+  text-align: left;
+}
+.th-align02 {
+  text-align: right;
+}
+.tr-hover:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+.abilities-description {
+  text-align: justify;
+}
+/******End Skills*****/
+
+/************************Education Section*******************************/
+
+.education-container {
+  padding: 2%;
+}
+
+
+/************************Contact Me Section*******************************/
+
+/* contact */
+
+.contact {
+  background-color: #e6ebef;
+}
+.contact-container {
+  padding: 2% 4rem;
+}
+.contact-h3 {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 10px;
+}
+.contact-p {
+  width: 90%;
+  margin: 13px auto;
+}
+
+.button_contact {
+  background-color: #00bbf0;
+  border: none;
+  color: #3b4b5b;
+  padding: 15px 32px 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: "Century Gothic", Verdana,sans-serif;
+  margin: 20px auto 10px;
+  opacity: 1;
+  transition: 1s;
+}
+
+.button_contact:hover {
+  background: white;
+}
+
+.i-mail {
+  color: #3b4b5b;
+  font-size: 16px;
+}
+
+/************************Footer Section*******************************/
+
+/******bottom box*********/
+.bottom-box {
+    background-color: #00bbf0;
+    padding: 70px 0 10px 0;
+    text-align: center;
+}
+
+.contact-me {
+    margin: 10px 70px;
+    height: 30px;
+}
+
+.inline {
+    display: inline;
+}
+
+
+.inline:hover {
+  transform: scale(1.10);
+}
+
+.contact-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+/****extra image skills image and text css****/
+.programming-image {
+  float: right;
+  width: 25%;
+  margin-left: 30px;
+}
+
+.computer{
+  float: left;
+  width: 25%;
+  margin-right: 30px;
+
+}
